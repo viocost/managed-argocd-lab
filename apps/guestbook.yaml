@@ -6,12 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<github-username>/managed-argocd-lab' # Update to match your fork.
+    repoURL: "https://github.com/viocost/managed-argocd-lab" # Update to match your fork.
     path: guestbook
     targetRevision: HEAD
   destination:
     namespace: guestbook
-    name: <environment-name> # Update this value.
+    name: staging # Update this value.
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
+
